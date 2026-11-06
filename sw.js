@@ -1,4 +1,4 @@
-const CACHE = 'yommi-static-v4';
+const CACHE = 'yommi-static-v5';
 const ASSETS = ['/', '/index.html', '/manifest.webmanifest', '/icon-192.png', '/icon-512.png', '/icon.svg'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)));
